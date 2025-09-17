@@ -1,0 +1,13 @@
+{
+  "name": "FreeFlights",
+  "alias": "freeflights",
+  "description": "Allow users to create free flights from any airport",
+  "keywords": [],
+  "version": "1.0.0",
+  "active": 1,
+  "order": 0,
+  "providers": ["Modules\\FreeFlights\\Providers\\FreeFlightsServiceProvider"],
+  "aliases": {},
+  "files": [],
+  "requires": []
+}
