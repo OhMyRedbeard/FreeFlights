@@ -3,6 +3,9 @@
 @section('title', 'Create Free Flight')
 
 @section('content')
+@foreach($bids as $bid)
+{{ $bid->id }}
+@endforeach
     <div class="card mb-3">
         <div class="card-body">
             <h4>New Flight</h4>
