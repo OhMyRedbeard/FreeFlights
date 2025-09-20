@@ -108,4 +108,20 @@ class FreeFlightsController extends Controller
 
         return $earthRadius * $c;
         }
+
+            private function getBids()
+        {
+        // actually run the query
+        return DB::table('flights')->where('user_id', Auth::id());
+        }
+
+    public function showBids()
+        {
+        // call the helper
+        $bids = $this->getBids();
+
+        // pass to the Blade view
+        return view('freeflights::index', compact('bids'));
+        }
+
     }
